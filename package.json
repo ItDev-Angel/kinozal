@@ -1,0 +1,39 @@
+{
+  "name": "kinozal-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItDev-Angel/kinozal.git"
+  },
+  "author": "A",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "bootstrap": "3.4.1",
+    "css-mqpacker": "^7.0.0",
+    "gulp-css-mqpacker": "^1.0.1",
+    "jquery": "^3.3.1",
+    "module-name": "^0.0.1-security",
+    "mqpacker": "^7.0.0",
+    "sort-css-media-queries": "^2.0.4"
+  },
+  "bugs": {
+    "url": "https://github.com/ItDev-Angel/kinozal/issues"
+  },
+  "homepage": "https://github.com/ItDev-Angel/kinozal#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-util": "^3.0.8",
+    "postcss": "^8.4.14",
+    "sass": "^1.52.2"
+  },
+  "description": ""
+}
