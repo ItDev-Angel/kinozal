@@ -1,6 +1,8 @@
+// navbar
 .navbar-inverse {
     background-color: $color-deep-dark;
     border-color: transparent;
+    margin-bottom: 0;
 }
 .navbar-inverse .navbar-nav > li > a {
     transition: background-color 0.5s;
@@ -42,4 +44,27 @@
 .navbar-toggle {
     float: none;
     margin-right: 0;
+}
+// aside
+.panel-info {
+    border:none;
+    box-shadow: none;
+    background-color:$color-gray-light;
+    &:not(&:last-of-type) {
+        margin-bottom: $gap * 2;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    .panel-heading {
+    color: $color-white;
+    background-color: $color-accent;
+    border:none;
+    font-size: 1.25rem;
+    letter-spacing: 0.08em;
+    }
+    .panel-body{
+        border:1px solid $color-gray;
+        border-radius:0 0 4px 4px;
+    }
 }
