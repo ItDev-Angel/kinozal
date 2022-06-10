@@ -34,8 +34,6 @@
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: #f4f4f4;
-}
-.panel-info:not(.panel-info:last-of-type) {
   margin-bottom: 30px;
 }
 .panel-info:last-of-type {
@@ -82,12 +80,58 @@ a:hover, a:focus {
   color: #df8a13;
 }
 
+section {
+  position: relative;
+  overflow: hidden;
+}
+
 h1 {
   font-family: "PT Serif", serif;
+  margin: -9.99999999px 0 1em;
+}
+h1:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 3px solid #f0ad4f;
+  margin: 0.85em 0 0 15px;
 }
 
 h2 {
   font-family: "PT Serif", serif;
+  margin: 60px 0 45px 45px;
+  font-family: "PT Serif", serif;
+}
+h2:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 3px solid #f0ad4f;
+  margin: 0.85em 0 0 15px;
+}
+h2:before {
+  top: 70px;
+  left: -20px;
+  width: 50px;
+  position: absolute;
+  height: 3px;
+  content: "";
+  background-color: #f0ad4f;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .header {
@@ -114,6 +158,100 @@ h2 {
   color: #ffffff;
   font-size: 1.15rem;
   letter-spacing: 0.2em;
+}
+
+.main {
+  margin-bottom: 80px;
+}
+.main .site-search {
+  margin-bottom: 45px;
+}
+.main .user-login {
+  margin-bottom: 60px;
+}
+
+.news-films-row,
+.top-week-row,
+.new-films-row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+.news-films-item,
+.top-week-item,
+.new-films-item {
+  padding: 0 7.5px 0 7.5px;
+  margin-bottom: 15px;
+}
+.news-films-item__title,
+.top-week-item__title,
+.new-films-item__title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+.news-films-item__thumbnail,
+.top-week-item__thumbnail,
+.new-films-item__thumbnail {
+  margin-bottom: 0;
+}
+.news-films-item__thumbnail img,
+.top-week-item__thumbnail img,
+.new-films-item__thumbnail img {
+  width: 100%;
+}
+.news-films-item__thumbnail:hover, .news-films-item__thumbnail:focus,
+.top-week-item__thumbnail:hover,
+.top-week-item__thumbnail:focus,
+.new-films-item__thumbnail:hover,
+.new-films-item__thumbnail:focus {
+  height: 100%;
+  cursor: pointer;
+  background-color: #df8a13;
+}
+.news-films-item__thumbnail:hover h3, .news-films-item__thumbnail:focus h3,
+.top-week-item__thumbnail:hover h3,
+.top-week-item__thumbnail:focus h3,
+.new-films-item__thumbnail:hover h3,
+.new-films-item__thumbnail:focus h3 {
+  color: #fff;
+}
+
+.news-films-item__title--first {
+  margin-top: 0;
+}
+
+.news-films-item__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+.news-films-item__description {
+  text-align: justify;
+}
+.news-films-item__description p {
+  margin: 0 0 10px;
+}
+
+.news-films-item__btn {
+  float: right;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
 }
 
 .left-sidebar {
@@ -237,7 +375,52 @@ h2 {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+
+.footer {
+  background-color: #232323;
+  padding: 45px 15px 0 15px;
+}
+.footer-row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.footer-nav__title {
+  color: #f1f1f1;
+}
+.footer-nav__list {
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.footer-nav__item a {
+  color: #777777;
+}
+.footer-nav__item a:hover, .footer-nav__item a:focus {
+  color: #fff;
+}
+
+ul {
+  margin-top: 0;
+}
+
+.copyright {
+  font-weight: 700;
+  margin: 20px 0;
+  text-align: center;
+}
+.copyright a {
+  color: #fff;
+}
 @media (min-width: 576px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
   .header-logo__title {
     font-size: 3.5rem;
   }
@@ -262,6 +445,12 @@ h2 {
   }
 }
 @media (max-width: 575.8px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 2.75rem;
+  }
   .header-logo__title {
     font-size: 2.5rem;
   }
