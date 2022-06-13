@@ -254,6 +254,65 @@ h4 {
   border-color: #eea236;
 }
 
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+#player {
+  width: 100%;
+  height: 100%;
+}
+
+.trailer-film-item {
+  overflow: hidden;
+  margin-bottom: 0;
+  padding: 0;
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.trailer-film-item-well {
+  font-size: 1.2rem;
+}
+
+.trailer-film-details:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.trailer-film-details {
+  white-space: nowrap;
+}
+
+.trailer-films__badge {
+  font-size: 0.96rem;
+}
+
+.panel {
+  border: none;
+  background-color: #ebebeb;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.panel-heading {
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  color: #fff;
+  border: none;
+  background-color: #df8a13;
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.btn-warning {
+  float: right;
+}
+
 .left-sidebar {
   margin-bottom: 80px;
 }
@@ -447,9 +506,11 @@ ul {
 @media (max-width: 575.8px) {
   h1 {
     font-size: 2rem;
+    line-height: 1.4;
   }
   h2 {
-    font-size: 2.75rem;
+    font-size: 2rem;
+    line-height: 1.4;
   }
   .header-logo__title {
     font-size: 2.5rem;
